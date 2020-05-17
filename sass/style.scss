@@ -1,0 +1,294 @@
+$color-white:#fff;
+$color-forest:forestgreen;
+$color-dark:black;
+$color-sandwich :#ce9110 ;
+$color-sandwich-darken: darken(#ce9110,20%);
+$color-choc-bg:rgba(0,0,0,0.6);
+$color-grey-bg:rgba(255, 255, 255, 0.55);
+$color-recipe: #f7f7f7;
+
+
+body {
+  // background: $color-white;
+margin:0;
+padding:0;
+overflow-x: hidden;}
+
+
+
+header {
+  background-image:
+   url(../Img/bg-header.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    color: $color-white;
+
+.navbar {
+ float: right;
+}
+#navbarNav{
+  justify-content: flex-end;
+  ul{
+    li {
+      a {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+
+}
+
+.logo-head {
+   float: left;
+  &:after {
+    content: "make great meals";
+
+    top: 0px;
+right: 859px;
+font-size: 1.2rem;
+color: $color-white;
+font-weight: 600;
+background: url(../img/slogan-bg.png) center top no-repeat;
+height: 56px;
+line-height: 1.2;
+width: 295px;
+padding-left: 23px;
+padding-top: 20px;
+z-index: 1;
+position: absolute;
+  }
+
+}
+.arla-btn {
+  background-color:$color-forest;
+  border: 1px  solid $color-forest;
+  color: $color-white;
+  padding: 6px;
+}
+
+.junkfood {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.74)), url(../Img/slider-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: $color-white;
+    .junkfood-des {
+      padding-bottom: 126px;
+      padding-top:126px;
+    }
+
+    img {
+      width: 76px;
+    }
+
+}
+.clearfix {
+  clear: both;
+}
+
+.header-white {
+  border: 1px solid $color-white;
+    display: inline-block;
+    border-radius: 50px;
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: $color-white;
+    font-size:23px;
+}
+.headergreen {
+  border: 1px solid $color-forest;
+    display: inline-block;
+    border-radius: 50px;
+    padding-right: 21px;
+    padding-left: 21px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: $color-dark;
+    font-size:23px;
+}
+
+ .creams {
+  // background-color: $color-white;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  .creams-details {
+    display: inline-block;
+
+  }
+    .creamsimg-desc {
+      img {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        width: 400px;
+      }
+    }
+
+.creams-desc {
+  text-align: left;
+  padding: 15px;
+    background: $color-white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+      .creams-descDetails {
+
+        .creams-descRecipe{
+          color: $color-forest;
+        }
+        .creams-descShrimp{
+          color: $color-dark;
+          font-size: 22px;
+        }
+      }
+
+  img {
+    float: right;
+    width: 29px;
+  }
+}
+}
+
+.explore {
+  background-image: url(../img/bg-footer.jpg);
+}
+
+
+
+.our-products{
+
+display: flex;
+justify-content: center;
+
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.products-details {
+  background-color: $color-forest;
+  min-height: 195px;
+}
+
+
+.products-detailsdesc {
+display: flex;
+// width: 256px;
+// background-color: $color-forest;
+padding: 20px;
+align-items: center;
+}
+
+
+
+.products-img {
+
+  img{
+    width: 66px;
+  }
+}
+.product-whipping {
+  padding: 25px;
+  text-align: left;
+  p {
+    color: $color-white;
+  }
+    .product-btn {
+      font-size: 13px;
+background: none;
+border: 1px solid $color-white;
+border-radius: 5px;
+color: $color-white;
+    }
+  }
+
+}
+
+.products-sandwich {
+  background-color: $color-sandwich !important;
+}
+
+.chocolate-bg {
+  // background-color: $color-choc-bg;
+  color: $color-white;
+
+  .specials-details {
+    background-color: $color-choc-bg;
+    text-align: center;
+    padding: 23px;
+    height: 355px;
+    .specialsdetails-desc {
+      display: inline-block;
+    border: 4px solid $color-white;
+    padding: 7px;
+    border-radius: 126px;
+    width: 76px;
+    text-align: center;
+    background-color: $color-grey-bg;
+
+
+    img {
+      width: 48%;
+
+    }
+    }
+    p {
+      line-height: 1.5;
+      padding-top: 13px;
+    }
+  }
+}
+
+
+.home-recipe {
+  background-color: $color-recipe;
+  .trier {
+     a{
+       color: $color-forest;
+       text-decoration: none;
+
+       p{
+         border: 4px solid $color-white;
+         padding: 10px;
+         border-bottom-left-radius: 5px;
+         border-bottom-right-radius: 5px;
+         text-align: left;
+         background-color: $color-white;
+         height: 70px;
+       }
+     }
+
+  }
+}
+
+
+
+.arla-input {
+  width: 310px;
+}
+
+
+footer {
+  background-image: url(../img/bg-footer.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+color: #fff;
+// padding: 40px;
+text-align: center;
+    hr {
+      background-color: $color-white;
+    }
+    span,h4  {
+      text-align: left;
+    }
+  // h4 {
+  //   text-align: left;
+  // }
+}
